@@ -6,9 +6,9 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USERNAME=dockerAdmin.2022
-      - POSTGRES_PASSWORD=dockerPassword.2022
-      - POSTGRES_DATABASE=app
+      POSTGRES_USER: dockerAdmin.2022
+      POSTGRES_PASSWORD: dockerPassword.2022
+      POSTGRES_DB: app
     volumes:
       - postgresql_data:/data/postgresql
       
